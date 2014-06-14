@@ -11,8 +11,7 @@ angular.module('herdit')
     .controller('RoomCtrl',
         function ($scope, PubNub) {
 
-            var addTrack = function(trackId) {
-                var self = this;
+            var addTrack = function(which, trackId) {
                 SC.get('/tracks/' + trackId, function(res) {
                     if(res) {
                         var track = {
@@ -21,8 +20,12 @@ angular.module('herdit')
                             scObj: res
                         };
 
-                        self.unshift(track);
-                        console.log(self);
+                        if(!which.playing) {
+                            which.playing = track;
+                        } else {
+                            which.tracks.unshift(track);
+                        }
+                        $scope.$apply();
                     }
                 });
             }
@@ -45,9 +48,11 @@ angular.module('herdit')
 
             $scope.left = {
                 playing: null,
-                volume: '', // 0 -1
-                pitch: '', // 0 - 1
-                playspeed: '', // 1 = 100% controlled by crossfade: -1 + 1
+                config: {
+                    volume: 1, // 0 -1
+                    pitch: 1, // 0 - 1
+                    playspeed: 1 // 1 = 100% controlled by crossfade: -1 + 1
+                },
                 tracks: [
                 ]
             };
@@ -66,20 +71,35 @@ angular.module('herdit')
                 ]
             };
 
-            $scope.playNextLeft = function() {
+            $scope.playNext = function(which) {
                 if($scope.left.tracks.count > 0) {
-
+                    which.playing = which.tracks.pop();
                 }
             };
 
-            $scope.playNextRight = function() {
-                if($scope.right.tracks.count > 0) {
+            // watch playing
+            (function() {
+                $scope.$watch(function() {
+                    return $scope.left.playing
+                }, function(oldVal, newVal) {
+                    if(!newVal) {
+                        $scope.playNext($scope.left);
+                    }
+                }, true);
+                
+                $scope.$watch(function() {
+                    return $scope.right.playing
+                }, function(oldVal, newVal) {
+                    if(!newVal) {
+                        $scope.playNext($scope.right);
+                    }
+                }, true);
+            })();            
 
-                }
-            };
-
-
-            addTrack.call($scope.left.tracks, 13158665);
+            window.addTrack = function() {
+                addTrack($scope.left, 13158665);  
+            }
+            
         }
 
 );
