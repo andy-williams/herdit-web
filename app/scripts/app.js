@@ -9,11 +9,7 @@
  * Main module of the application.
  */
 var herdit = angular.module('herdit', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
     'pubnub.angular.service'
 ]);
 
@@ -32,6 +28,10 @@ herdit.config(function ($routeProvider) {
             redirectTo: '/'
         });
 });
+
+herdit.config(function($sceProvider) {
+    $sceProvider.enabled(false);
+  });
 
 herdit.controller('RoomListCtrl', [
     '$scope',

@@ -26,10 +26,19 @@
         <div class="room">
             <div class="music-list">
                 <div class="playing" ng-show="left.playing">
-                    <img ng-src="left.playing.scObj.artwork_url">
+                    <img ng-src="{{left.playing.scObj.artwork_url}}">
                 </div>
 
                 <ul class="music-list" ng-repeat="track in left.tracks">
+                    <li>{{track.artist}} - {{track.title}}</li>
+                </ul>
+                
+                <hr>
+
+                <div class="playing" ng-show="right.playing">
+                    <img ng-src="{{right.playing.scObj.artwork_url}}">
+                </div>
+                <ul class="music-list" ng-repeat="track in right.tracks">
                     <li>{{track.artist}} - {{track.title}}</li>
                 </ul>
             </div>
@@ -47,9 +56,13 @@
 
 <script src="//connect.soundcloud.com/sdk.js"></script>
 <script>
+    window.herditConfig = {
+        clientId: '352f63e93ab9c0d611979736f1859264',
+        redirectUri: "" 
+    };
     SC.initialize({
-        client_id: '352f63e93ab9c0d611979736f1859264',
-        redirect_uri: "http://example.com/callback.html"
+        client_id: herditConfig.clientId,
+        redirect_uri: herditConfig.redirectUri
     });
 </script>
 <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
