@@ -1,0 +1,614 @@
+body {background-color: #ffffff;}
+
+.header { 	
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.302;
+  position: absolute;
+  left: -7px;
+  top: 0px;
+  width: 100%;
+  height: 98px;
+  z-index: 4;
+}
+
+#logo { width: 100%;
+		height: 100%;
+		padding-top: 33px;
+		padding-bottom: 30px;
+		padding-left: 50px;}
+
+
+
+.background-album-art {	
+ 						 background-color: rgb( 0, 0, 0 );
+						 position: absolute;
+  						 left: -50px;
+  						 top: -50px;
+ 						 width: 130%;
+ 						 height: 900px;
+						 z-index: 2;
+						 filter: blur(30px);
+						-webkit-filter: blur(30px);}
+
+
+
+.Welcome_to {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 1;
+  position: absolute;
+  left: 146px;
+  top: 155px;
+  z-index: 57;
+}
+
+.naomis_room {
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 255, 255, 255 );
+  line-height: 0.75;
+  position: absolute;
+  left: 146px;
+  top: 192.576px;
+  z-index: 58;
+}
+
+
+.thin_rule {
+  border-width: 1px;
+  border-color: rgb( 255, 255, 255 );
+  border-style: solid;
+  opacity: 0.2;
+  position: absolute;
+  left: 146px;
+  top: 230px;
+  width: 1055px;
+  height: 0;
+  z-index: 60;
+}
+
+.Next_track {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 204, 204, 204 );
+  line-height: 1.5;
+  position: absolute;
+  left: 146px;
+  top: 274.288px;
+  z-index: 165;
+}
+
+.Now_playing {
+  font-size: 16px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 204, 204, 204 );
+  line-height: 1.5;
+  position: absolute;
+  left: 373px;
+  top: 274px;
+  z-index: 164;
+}
+
+.Now_playing2 {
+  font-size: 16px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 204, 204, 204 );
+  line-height: 1.5;
+  position: absolute;
+  left: 804px;
+  top: 274px;
+  z-index: 164;
+}
+
+.Next_with2 {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 204, 204, 204 );
+  line-height: 1.5;
+  position: absolute;
+  left: 1004px;
+  top: 274.288px;
+  z-index: 166;
+}
+
+.Album-cover-left {
+  border-radius: 2px;
+  position: absolute;
+  left: -0px;
+  top: 320px;
+  width: 201px;
+  height: 197px;
+  z-index: 52;
+}
+
+.Album-cover-middle-left {
+  border-radius: 2px;
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.302;
+  box-shadow: 0px 4px 1px 0px rgb( 0, 0, 0 );
+  position: absolute;
+  left: 144px;
+  top: 320px;
+  width: 200px;
+  height: 197px;
+  z-index: 44;
+}
+
+.Album-cover-center-left {
+  border-radius: 2px;
+  background-color: rgb( 153, 153, 153 );
+  box-shadow: 0px 4px 1px 0px rgb( 0, 0, 0 );
+  position: absolute;
+  left: 373px;
+  top: 320px;
+  width: 200px;
+  height: 197px;
+  z-index: 37;
+}
+
+
+.vs {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 255, 255, 255 );
+  font-weight: lighter;
+  line-height: 1.091;
+  position: absolute;
+  left: 654px;
+  top: 396px;
+  z-index: 65;
+}
+.circle {
+  border-width: 1px;
+  border-color: rgb( 255, 255, 255 );
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgba( 0, 0, 0, 0.502 );
+  position: absolute;
+  left: 642px;
+  top: 382px;
+  width: 48px;
+  height: 48px;
+  z-index: 64;
+}
+
+
+.Album-cover-center-right{
+  border-radius: 2px;
+  background-color: rgb( 153, 153, 153 );
+  box-shadow: 0px 4px 1px 0px rgb( 0, 0, 0 );
+  position: absolute;
+  left: 763px;
+  top: 320px;
+  width: 200px;
+  height: 197px;
+  z-index: 21;
+}
+
+.Album-cover-middle-right {
+  border-radius: 2px;
+  background-color: rgb( 0, 0, 0 );
+  opacity: 0.302;
+  box-shadow: 0px 4px 1px 0px rgb( 0, 0, 0 );
+  position: absolute;
+  left: 1003px;
+  top: 320px;
+  width: 200px;
+  height: 197px;
+  z-index: 27;
+}
+
+.Album-cover-far-right {
+  border-radius: 2px;
+  opacity: 0.302;
+  
+  position: absolute;
+  left: 1233px;
+  top: 320px;
+  width: 200px;
+  height: 197px;
+  z-index: 33;
+}
+
+.Song_name_far_left {
+  font-size: 34px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: lighter;
+  color: rgba( 255, 255, 255, 0.102 );
+  line-height: 0.706;
+  -moz-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  position: absolute;
+  left: -87.081px;
+  top: 554.862px;
+  z-index: 48;
+}
+
+.Song_name_middle_left {
+  font-size: 34px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgba( 255, 255, 255, 0.102 );
+  font-weight: lighter;
+  line-height: 0.706;
+  -moz-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  position: absolute;
+  left: 146.438px;
+  top: 554.862px;
+  z-index: 46;
+}
+
+.Song_name_playing_left {
+  font-size: 34px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 255, 255, 255 );
+  font-weight: lighter;
+  line-height: 0.75;
+  -moz-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  position: absolute;
+  left: 370.331px;
+  top: 556.58px;
+  z-index: 40;
+}
+
+.Song_name_playing_right {
+  font-size: 34px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 255, 255, 255 );
+  font-weight: lighter;
+  line-height: 0.75;
+  -moz-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  position: absolute;
+  left: 760.035px;
+  top: 556.58px;
+  z-index: 19;
+}
+
+.Song_name_middle_right {
+  font-size: 34px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgba( 255, 255, 255, 0.102 );
+  font-weight: lighter;
+  line-height: 0.706;
+  -moz-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014700193424,0,0);
+  position: absolute;
+  left: 999px;
+  top: 554.862px;
+  z-index: 46;
+}
+
+.Song_name_far_right {
+  font-size: 34px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgba( 255, 255, 255, 0.102 );
+  line-height: 0.706;
+  -moz-transform: matrix( 1,0,0,1.00014938096164,0,0);
+  -webkit-transform: matrix( 1,0,0,1.00014938096164,0,0);
+  -ms-transform: matrix( 1,0,0,1.00014938096164,0,0);
+  position: absolute;
+  left: 1229.919px;
+  top: 554.862px;
+  z-index: 31;
+}
+
+.dj_bg {
+  border-width: 1px;
+  border-color: #c1c1c1;
+  border-style: solid;
+  background-color: rgb( 238, 238, 238 );
+  position: absolute;
+  left: -11px;
+  top: 675px;
+  width: 110%;
+  height: 110px;
+  z-index: 151;
+}
+
+.dj_profile {
+  border-width: 1px;
+  border-color: rgb( 170, 170, 170 );
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgb( 153, 153, 153 );
+  position: absolute;
+  left: 150px;
+  top: 692px;
+  width: 70px;
+  height: 69px;
+  z-index: 152;
+}
+
+.current_dj_name {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 51, 51, 51 );
+  font-weight: bold;
+  line-height: 0.857;
+  position: absolute;
+  left: 240px;
+  top: 705px;
+  z-index: 155;
+}
+
+.user_profile  {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 1.2;
+  position: absolute;
+  left: 240px;
+  top: 735px;
+  z-index: 154;
+}
+
+.tracks_mixed_icon {
+  position: absolute;
+  left: 980px;
+  top: 720px;
+  width: 31px;
+  height: 23px;
+  z-index: 161;
+}
+
+.tracks_mixed {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: rgb( 153, 153, 153 );
+  line-height: 1.2;
+  position: absolute;
+  left:1020px;
+  top: 719px;
+  z-index: 160;
+}
+
+.plats_icon {
+  position: absolute;
+  left: 1097px;
+  top: 715px;
+  width: 32px;
+  height: 33px;
+  z-index: 156;
+}
+
+.plats_number {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: rgb( 153, 153, 153 );
+  line-height: 1.2;
+  position: absolute;
+  left: 1150px;
+  top: 719px;
+  z-index: 159;
+}
+
+
+.song_list_title {
+	position: absolute;
+  font-size: 32px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 51, 51, 51 );
+  font-weight: bold;
+  line-height: 0.75;
+  position: absolute;
+  left: 150px;
+  top: 850px;
+  z-index: 144;
+}
+
+.hr2 {
+  border-width: 2px;
+  border-color: #eeeeee;
+  border-style: solid;
+  position: absolute;
+  left: 150px;
+  top: 900px;
+  width: 1055px;
+  height: 0;
+  z-index: 68;
+}
+
+.album_art_1 {
+  border-width: 2px;
+  border-color: rgb( 204, 204, 204 );
+  border-style: solid;
+  border-radius: 2px;
+  background-color: rgb( 153, 153, 153 );
+  position: absolute;
+  left: 150px;
+  top: 930px;
+  width: 127px;
+  height: 124px;
+  z-index: 71;
+}
+
+.album_title_1 {
+  font-size: 28px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 51, 51, 51 );
+  line-height: 0.857;
+  position: absolute;
+  left: 300px;
+  top: 970px;
+  z-index: 69;
+}
+
+.artist_name_1 {
+  font-size: 20px;
+   font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 2.1;
+  position: absolute;
+  left: 300px;
+  top: 1000px;
+  z-index: 70;
+}
+
+.Added_by {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 1.2;
+  position: absolute;
+  left: 568.005px;
+  top: 995px;
+  z-index: 97;
+}
+
+.down_vote_one {
+  position: absolute;
+  left: 1012px;
+  top: 985px;
+  width: 44px;
+  height: 44px;
+  z-index: 109;
+}
+
+.up_vote_one {
+  position: absolute;
+  left: 1075px;
+  top: 985px;
+  width: 44px;
+  height: 44px;
+  z-index: 109;
+}
+
+.upvote_numbers {
+  border-width: 2px;
+  border-color: rgb( 5, 215, 10 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 1150px;
+  top: 985px;
+  width: 44px;
+  height: 44px;
+  z-index: 113;
+}
+
+.upvote_numbers_figure {  left: 1156px;
+						  top: 995px;
+ 						  width: 44px;
+						  height: 44px;
+						  z-index: 113;
+						  font-size: 20px;
+  						  font-family: 'Open Sans', sans-serif;
+  						  color: rgb( 153, 153, 153 );
+						  line-height: 1.2;
+						  position: absolute; }
+
+
+
+
+
+
+.hr3 {
+  border-width: 2px;
+  border-color: #eeeeee;
+  border-style: solid;
+  position: absolute;
+  left: 150px;
+  top: 1095px;
+  width: 1055px;
+  height: 0;
+  z-index: 68;
+}
+
+.album_art_2 {
+  border-width: 2px;
+  border-color: rgb( 204, 204, 204 );
+  border-style: solid;
+  border-radius: 2px;
+  background-color: rgb( 153, 153, 153 );
+  position: absolute;
+  left: 150px;
+  top: 1125px;
+  width: 127px;
+  height: 124px;
+  z-index: 71;
+}
+
+.album_title_2 {
+  font-size: 28px;
+ font-family: 'Open Sans', sans-serif;
+  color: rgb( 51, 51, 51 );
+  line-height: 0.857;
+  position: absolute;
+  left: 300px;
+  top: 1160px;
+  z-index: 69;
+}
+
+.artist_name_2 {
+  font-size: 20px;
+   font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 2.1;
+  position: absolute;
+  left: 300px;
+  top: 1185px;
+  z-index: 70;
+}
+
+.Added_by_2 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb( 153, 153, 153 );
+  line-height: 1.2;
+  position: absolute;
+  left: 568.005px;
+  top: 1185px;
+  z-index: 97;
+}
+
+.down_vote_2 {
+  position: absolute;
+  left: 1012px;
+  top: 1183px;
+  width: 44px;
+  height: 44px;
+  z-index: 109;
+}
+
+.up_vote_2 {
+  position: absolute;
+  left: 1075px;
+  top: 1183px;
+  width: 44px;
+  height: 44px;
+  z-index: 109;
+}
+
+.upvote_numbers_2 {
+  border-width: 2px;
+  border-color: rgb( 5, 215, 10 );
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 1150px;
+  top: 1183px;
+  width: 44px;
+  height: 44px;
+  z-index: 113;
+}
+
+.upvote_numbers_figure_2 {  left: 1156px;
+						  top: 1190px;
+ 						  width: 44px;
+						  height: 44px;
+						  z-index: 113;
+						  font-size: 20px;
+  						  font-family: 'Open Sans', sans-serif;
+  						  color: rgb( 153, 153, 153 );
+						  line-height: 1.2;
+						  position: absolute; }
