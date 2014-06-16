@@ -1,7 +1,9 @@
 {
   "name": "herditweb",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "node-static": "^0.7.3"
+  },
   "devDependencies": {
     "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",
@@ -36,5 +38,20 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "description": "herdit-web\r ==========",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andy-williams/herdit-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andy-williams/herdit-web/issues"
+  },
+  "homepage": "https://github.com/andy-williams/herdit-web"
 }
