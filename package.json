@@ -37,7 +37,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "start": "node app.js"
   },
   "description": "herdit-web\r ==========",
   "main": "app.js",
