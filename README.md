@@ -3,6 +3,10 @@ herdit-web
 
 Main web app for herdit
 
+## Demo
+
+[Visit the demo](http://herdit.herokuapp.com/)
+
 ## Install
 
 Just run <code>npm install</code> on root dir
